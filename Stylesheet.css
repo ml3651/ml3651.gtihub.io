@@ -1,0 +1,536 @@
+/*Removes default sizing browser*/
+* {
+	margin: 0; /*no margin on page*/
+	padding: 0; /*no padding on page*/
+	box-sizing: border-box; /*tells the browser to account for any border and padding in the values you specify for an element's width and height*/
+}
+
+/* Sets brwoser so you can use 100% for entire frame*/
+html, body {
+	width: 100%; /*width of full page*/
+	height: 100%;/*height of full page*/
+}
+
+/*hides unwanted scrollbar on all pages*/
+body {
+  overflow-x: hidden; /* Hide scrollbars */
+}
+
+/*code for navbar and header on all pages*/
+/*header at the top of page*/
+.header {
+  padding: 0px;
+  background: white;
+}
+
+/*Title of page*/
+ .headingb {
+	font-family: arial; /*Font type*/
+	font-size: 30px; /*size of text*/
+	text-align: center; /*alignment/position of text*/
+	color: black; /*color of text*/
+}
+
+/*logo customisation*/
+div.logo {
+	margin: 2px;
+	border: no-border;
+	float: left;
+	width: 50%;
+}
+
+/*logo image*/
+div.logo img {
+	width: 20%;
+	height: 50;
+}
+
+/* Add a black background color to the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #008000;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  font-family: arial;
+  float: left;
+  display: block;
+  color: White;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.navbar a.active {
+  background-color: #008000;
+  color: black;
+}
+
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .navbar a, .navbar input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+/*Border around the search box in the navbar*/
+  .navbar input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+ .column {
+width: 100%;
+ }
+ }
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  font-family: arial;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+
+
+/*code for Images/content on product page*/
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 64px 128px 0 rgba(0, 0, 0, 0);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*changes color of button on hover*/
+.title {
+  color: grey;
+}
+/*button inside card customisation*/
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #008000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+/*changes color of button hover*/
+.button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+/*code for customising content on the home page*/
+/*centers images*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some shadows to create a card effect */
+.card2 {
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* On mouse-over, add a deeper shadow */
+.card2:hover {
+  box-shadow: 0 128px 256px 0 rgba(0,0,0,0.2);
+}
+
+/*code for content on the Contact page*/
+/*textbox*/
+.box {
+    margin-top: 0;
+    padding-bottom: 80px;
+	font-family:arial
+	
+}
+/*color of textbox changes when hovered over*/
+.box:hover {
+	background-color: #008000;
+	color: white;
+}
+
+.omniCalc {
+    position: fixed;
+}
+
+.omniCalc::after {
+    position: fixed;
+    content: "";
+    background: #008000;
+    width: 300px;
+    height: 43px;
+    bottom: 0;
+}
+
+/*padding around text inside textbox*/
+.colCstm {
+    width: 100%;
+    padding: 10px 30px 20px 30px;
+    min-height: 10px;
+    margin: 10px 0 0 0;
+}
+/*customisation of textbox*/
+.box {
+    padding-bottom: 10px;
+    border-radius: 20px;
+	border: 2px solid black;
+}
+/*padding inside textbox*/
+.rowCstm {
+    padding: 10px 10px 0 10px;
+}
+/*padding around outside of textbox*/
+.high-padding {
+    padding: 40px 0 50px 0;
+}
+
+
+
+
+/*code for customising footer on all pages*/
+/*Footer*/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font: 16px/1.6 Arial;
+}
+
+header{
+	text-align: center;
+	padding-top: 100px;
+	margin-bottom:190px;
+}
+
+header h1{
+	font: bold 32px/1.5 arial;
+	color: white;
+	padding-bottom: 16px;
+}
+
+header h2{
+	color: white;
+}
+
+header span{
+	color: #3F71EA;
+}
+
+
+/* The footer is fixed to the bottom of the page */
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #2c292f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px arial;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+	position: static;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 30%;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  white;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #e0ac1c;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 95%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 TRANSITIONAL//EN"
+"http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html>
+
+<head>
+		<!--title of web page-->
+		<title>Matsons Building and Roofing Merchant</title>
+		<!--links index page to external css document-->
+		<link rel="Stylesheet" type="text/css" href="Stylesheet.css">
+		<link href='https://fonts.googlepis.com/css?family=Poppins' rel='Stylesheet'>
+</head>
+
+	<body>
+		<div class="header">
+		<!--Brand logo-->
+		<img src="https://cdn.shopify.com/s/files/1/0406/9421/8912/files/logo-new_d567a2c4-ad50-40df-8c13-197c2d58fdb3_195x60_crop_center@2x.png?v=1615971100" class="logo">
+		</div>
+		
+		<!--navigation bar-->
+		<div class="navbar">
+		<a href="Matsons.html">Home</a>
+		<a href="Products.html">Products</a>
+		<a href="Contact.html">Contact</a>
+		<input type="text" placeholder="Search..">
+		</div>
+		
+        <!--Title of brand (Heading)-->
+        <h1 class="headingb"> 
+         Matsons Builders Merchant
+        </h1>
+        </div>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+         <!-- Full-width images with number and caption text -->
+         <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="https://thumbs.dreamstime.com/b/house-under-construction-blueprints-building-project-53360048.jpg" style="width:100%">
+        <div class="text">Caption Text</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="https://cdn.pixabay.com/photo/2019/02/06/16/32/architect-3979490__340.jpg" style="width:100%">
+        <div class="text">Caption Two</div>
+        </div>
+    
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="https://thesethreerooms.com/wp-content/uploads/2021/05/kitchen-bathroom-paint-thesethreerooms.jpg" style="width:100%">
+        <div class="text">Caption Three</div>
+        </div>
+    
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+         <br>
+    
+         <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+         </div>
+
+		<!--Other images side by side-->
+		<div class="row">
+		<div class="column">
+		<div class="card2">
+		<img src="https://cdn.hughes.co.uk/live-trade/media/image/db/68/d0/hughestrade-delivery-mobile-hdr-2.png" style="width:100%">
+		<div class="container">
+        <h2>Deliveries</h2>
+        <p>We deliver anywhere around leicester. Order now</p>
+        <p><button class="button">Order now</button></p>
+		</div>
+		</div>
+		</div>
+		<!--Images side by side-->
+		<div class="column">
+		<div class="card2">
+		<img src="https://envato-shoebox-0.imgix.net/df7b/9e3f-333c-49ff-b18f-a71042102f60/4H1A8579.jpg?auto=compress%2Cformat&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalign=center%2Cmiddle&markalpha=18&w=1600&s=3a1961fe57ef28cb12b9ddccf83a6ff6" style="width:100%">
+		<div class="container">
+        <h2>Advice & Ideas</h2>
+        <p>Book your free consultation now</p>
+        <p><button class="button">Book Now</button></p>
+		</div>
+		</div>
+		</div>
+
+		<div class="column">
+		<div class="card2">
+		<div class="container">
+        <h2>Newsletter</h2>
+        <p>Subscribe to our newsletter for updates about offers, products and latest information</p>
+        <p><button class="button">Sign up</button></p>
+		</div>
+		</div>
+		</div>
+		</div>
+		<!--Footer-->
+		<footer class="footer-distributed">
+		<div class="footer-left">
+        <img src="https://cdn.shopify.com/s/files/1/0406/9421/8912/files/logo-new_d567a2c4-ad50-40df-8c13-197c2d58fdb3_195x60_crop_center@2x.png?v=1615971100">
+		<p class="footer-links">
+		<a href="Matsons.html">Home</a>
+		|
+		<a href="Products.html">Products</a>
+		|
+		<a href="Contact.html">Contact</a>
+		</p>
+		<p class="footer-company-name">Matsons Building and Roofing Merchant</p>
+		</div>
+
+		<div class="footer-center">
+		<div>
+		<i class="fa fa-map-marker"></i>
+		<p><span>39 Gwendolen road ,LE5 5FL</span>
+		Leicester, United Kingdom</p>
+		</div>
+		<div>
+		<i class="fa fa-phone"></i>
+		<p>01162940294</p>
+		</div>
+		<div>
+		<i class="fa fa-envelope"></i>
+		<p>admin@matsons.co.uk</a></p>
+		</div>
+		</div>
+		<div class="footer-right">
+		<p class="footer-company-about">
+		<span>About the company</span>
+		We offer products and services for all your building and roofing needs</p>
+		</div>
+		</footer>
+		
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+
+	</body>
+</html>
